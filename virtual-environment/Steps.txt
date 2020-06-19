@@ -1,0 +1,29 @@
+1. Create a file main.py
+2. open powershell
+>> pip install virtualenv
+
+3. create virtual environment:
+>> virtualenv shadab
+
+****Run CMD/Power shell as admin****else through error
+**change your directory
+**Change Execution Policy //never change untrusted execution policy. always make sure the script u r executing is trusted
+
+set-executionpolicy remotesigned
+4. activate virtual environment
+linux : source shadab/bin/activate
+windows : shadab\scripts\activate
+
+5. Install pip if not installed in virtual environment
+copy get-pip.py and paste it in virtual environment directory with same name get-pip.py
+Execute the command on powershell to install pip
+>> python get-pip.py
+
+6. try installing packages in virtual environment using pip
+Example : pip install pandas, pip install sklearn
+
+7. Creating requirement file
+pip freeze > requirements.txt
+
+8. To get access of system packages to virtual environment
+virtualenv --system-site-packages shadab2
