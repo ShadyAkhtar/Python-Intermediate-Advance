@@ -1,3 +1,3 @@
-import main
+import import_main_name
 
-main.myinfo()
+import_main_name.myinfo()
